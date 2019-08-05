@@ -1,0 +1,404 @@
+@import url(http://db.onlinewebfonts.com/c/35ac14f8a045f0a3f8f171d6b32dd09f?family=Georgia);
+@font-face {
+	font-family: 'Palatino';
+	src: url(font/palatino.woff2) format('woff2'), url(font/palatino.woff) format('woff');
+	font-weight: 400;
+	font-style: normal
+}
+
+;
+@font-face {
+	font-family: 'AvenirNext-Regular';
+	src: url(font/AvenirNextLTPro-Regular.woff) format('woff');
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'AvenirNext-UltLt';
+	src: url(font/AvenirNextLTPro-UltLt.woff) format('woff');
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'AvenirNext-Bold';
+	src: url(font/AvenirNextLTPro-Bold.woff) format('woff');
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'AvenirNext-Demi';
+	src: url(font/AvenirNextLTPro-Demi.woff) format('woff');
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'AvenirNext-MediumIt';
+	src: url(font/AvenirNextLTPro-MediumIt.woff) format('woff');
+	font-weight: 400;
+	font-style: normal
+}
+
+* {
+	box-sizing: border-box;
+  -webkit-appearance: none
+}
+
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background: #dcdcdc;
+	padding: 0;
+	margin: 0;
+	font-family: 'AvenirNext-Regular'
+}
+
+.hero, .hero_content {
+	overflow: hidden;
+	height: 100%;
+}
+
+.headings {
+	height: 40%;
+  background: #4B4A67;
+  color: #C2CFB2;
+	text-align: center;
+  position: relative;
+}
+
+.headings, .portfolio {
+  padding-top: 50px;
+}
+
+.hero_content img {
+	width: 100%
+}
+
+.portfolio {
+	height: 60%;
+  background: linear-gradient(rgba(221, 209, 199, 0.25), rgba(221, 209, 199, 0.25)), url('image.jpg') center center / cover no-repeat;
+  position: relative;
+}
+
+.portfolio_image {
+	text-align: center;
+	height: 100%;
+  margin: 0 auto;
+}
+
+.portfolio_image img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.heading {
+	font-family: "Georgia";
+	font-size: 60px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  left: -20px;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+
+.fixed hr {
+  border: 1px #383737 solid;
+  width: 50px;
+  margin-right: 10px;
+  float: left;
+}
+
+.sub_heading {
+	font-family: 'AvenirNext-Regular', sans-serif;
+	font-size: 20px
+}
+
+.sub_heading p {
+	margin: 0
+}
+
+.experience_heading, .education_heading {
+  font-family: 'AvenirNext-Demi', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #4B4A67
+}
+
+.terminal_section {
+	padding: 15px 8vw;
+	background: #4B4A67
+}
+
+.terminal {
+	padding: 12px 20px 30px 30px;
+	border-radius: 5px;
+	color: #FAFAFA;
+	font-family: 'Monaco', 'Courier New';
+	overflow: hidden;
+	background: linear-gradient(to bottom, #CCCCCC 0%, #CCCCCC 10%, #CCCCCC 10%, #383737 10%, #383737 100%)
+}
+
+.terminal_buttons {
+	margin-top: 8px;
+	margin-left: -10px
+}
+
+.terminal_button {
+	height: 15px;
+	width: 15px;
+	background: black;
+	display: inline-block;
+	margin-right: 5px;
+	border-radius: 100%;
+	color: #383737;
+	font-size: 8px;
+	text-align: center;
+	padding-top: 2px
+}
+
+.terminal_button.close {
+	color: #FF5A52;
+	background: #FF5A52
+}
+
+.terminal_button.minimize {
+	color: #E6C029;
+	background: #E6C029
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.terminal_button.maximize {
+	color: #52C22B;
+	background: #52C22B
+}
+
+.terminal_content {
+	margin-top: 50px
+}
+
+.command_line:not(:last-child) {
+	margin: 20px 0
+}
+
+.response {
+	padding-left: 20px
+}
+
+.experience {
+	background: #8DB580;
+	padding: 20px;
+}
+
+.education {
+	padding: 20px;
+}
+
+ul.experience_list, ul.education_list {
+	padding: 0;
+  color: #303042
+}
+
+ul.experience_list li.col-8.experience_list_item, ul.education_list li.col-8.education_list_item {
+	float: none;
+	margin: 0 auto 25px auto
+}
+
+ul.experience_list li.experience_list_item, ul.education_list li.education_list_item {
+	list-style-type: none;
+	padding: 20px;
+	border-radius: 4px
+}
+
+.job_picture, .education_picture {
+	text-align: left;
+  margin-right: 30px;
+  float: left;
+  max-width: 50px;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+.job_picture img, .education_picture img {
+	height: 50px;
+	border-radius: 100%
+}
+
+.job_title, .education_title {
+	font-family: 'AvenirNext-Demi', sans-serif;
+	font-size: 20px
+}
+
+.job_location, .education_location {
+	font-family: 'AvenirNext-Bold', sans-serif;
+	color: #303042;
+	display: inline-block
+}
+
+.job_date {
+	font-family: 'AvenirNext-Demi', sans-serif;
+	display: inline-block;
+	margin-left: 10px
+}
+
+.education_major, .education_years {
+  font-family: 'AvenirNext-Regular', sans-serif;
+	display: inline-block;
+}
+
+.job_description{
+	margin: 20px 0
+}
+
+.job_languages a {
+	font-size: 26px;
+	color: #4B4A67;
+	text-decoration: none;
+	margin-left: 10px
+}
+
+.job_languages i:hover {
+	color: #7E8987;
+	cursor: pointer;
+	transition: 0.25s ease-in
+}
+
+.social_links {
+	background: #7E8987;
+	padding: 150px;
+	text-align: center;
+	color: #DDD1C7;
+	text-transform: uppercase;
+  position: relative;
+}
+
+.social_links hr {
+	width: 30%;
+  height: 1px;
+	border: solid 1px #DDD1C7
+}
+
+.social_link {
+	font-size: 30px;
+	position: relative
+}
+
+.social_link a {
+	color: #DDD1C7;
+	text-decoration: none
+}
+
+.social_link i:hover {
+	color: #C2CFB2;
+	cursor: pointer;
+	transition: 0.25s ease-in
+}
+
+.social_link .fab, .social_link .fas {
+	padding: 5px
+}
+
+.created_by {
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.created_by img {
+  max-width: 100%;
+  max-height: 100%
+}
+
+[class*="col-"] {
+	width: 100%;
+	float: left
+}
+
+@media only screen and (max-width:850px) {
+	.headings {
+		padding-top: 100px
+	}
+	.heading {
+		font-size: 40px
+	}
+	.sub_heading {
+		font-size: 16px
+	}
+  .fixed {
+    display: none;
+  }
+  .job_title, .education_title {
+    font-size: 18px;
+  }
+	.job_info, .education_info {
+		margin-top: 5px;
+	}
+}
+
+@media only screen and (max-width:1200px) {
+	.heading {}
+}
+
+@media only screen and (min-width:800px) {
+	.col-1 {
+		width: 8.33%
+	}
+	.col-2 {
+		width: 16.66%
+	}
+	.col-3 {
+		width: 25%
+	}
+	.col-4 {
+		width: 33.33%
+	}
+	.col-5 {
+		width: 41.66%
+	}
+	.col-6 {
+		width: 50%
+	}
+	.col-7 {
+		width: 58.33%
+	}
+	.col-8 {
+		width: 66.66%
+	}
+	.col-9 {
+		width: 75%
+	}
+	.col-10 {
+		width: 83.33%
+	}
+	.col-11 {
+		width: 91.66%
+	}
+	.col-12 {
+		width: 100%
+	}
+}
