@@ -86,7 +86,7 @@ body {
 
 .portfolio {
 	height: 60%;
-  background: linear-gradient(rgba(221, 209, 199, 0.25), rgba(221, 209, 199, 0.25)), url('image.jpg') center center / cover no-repeat;
+  background: linear-gradient(rgba(221, 209, 199, 0.25), rgba(221, 209, 199, 0.25)), url('2020_image.jpg') center center / cover no-repeat;
   position: relative;
 }
 
